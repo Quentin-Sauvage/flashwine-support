@@ -16,24 +16,63 @@
 <body>
 
 <h1>Privacy Policy</h1>
-<p><strong>FlashWine</strong> — last updated 7 May 2026</p>
+<p><strong>FlashWine</strong> — last updated 5 October 2026</p>
 
-<p>FlashWine is an independent study application for WSET Level 3 &amp; Level 4 wine education, developed by Quentin Sauvage. This policy explains what information the app collects, how it is used, and your rights.</p>
+<p>FlashWine is an independent study application for wine education (WSET Level 3 &amp; Level 4, Master of Wine preparation, and general wine knowledge), developed by Quentin Sauvage. It is available on iOS and Android. This policy explains what information the app collects, how it is used, and your rights.</p>
 
 <h2>1. Information We Collect</h2>
 <ul>
-  <li><strong>Account information.</strong> When you sign in with Google or Apple, we receive your name and email address from the respective identity provider. We do not receive or store your password.</li>
-  <li><strong>Study progress.</strong> Quiz results, XP points, daily streak data, and imported study packs are stored locally on your device and, when you are signed in, synchronised to Firebase (Google) under your account.</li>
-  <li><strong>Tasting notes.</strong> Content you create in collaborative tasting sessions is stored in Firebase Realtime Database under your account.</li>
-  <li><strong>Crash and usage data.</strong> We do not use any third-party analytics SDK. Firebase may collect minimal crash reporting data as part of its core service.</li>
+  <li><strong>Account information.</strong> You can sign in with email and password, Google, or (on iOS) Apple. We receive your email address and, depending on the sign-in method, your name and a unique account identifier. Passwords for email sign-in are handled by Firebase Authentication; we never see or store them in readable form.</li>
+  <li><strong>Study progress.</strong> Quiz results, review history, XP, daily streaks, exam attempts, wine mastery, daily statistics, and activated study packs are stored on your device and, when you are signed in, synchronised to Firebase Realtime Database under your account.</li>
+  <li><strong>Tasting notes.</strong> Notes and tasting groups you create are stored on your device and synchronised to Firebase Realtime Database under your account.</li>
+  <li><strong>Photos and camera.</strong> If you use the label or wine-list scanner, the app accesses your camera or a photo you choose. Text is read from the image on your device (Google ML Kit, on-device). Photos are stored on your device only. They are not uploaded to our servers. See section 3 for the optional AI feature, which can send a wine-list photo to the AI provider you configure.</li>
+  <li><strong>Purchases.</strong> When you buy a study module, the transaction is processed by Google Play or the Apple App Store. We receive confirmation of which modules you own, but never your payment card details.</li>
+  <li><strong>Notifications.</strong> Study reminders are scheduled locally on your device. They do not involve a push-notification server.</li>
+  <li><strong>Crash and usage data.</strong> We do not use any third-party analytics, advertising, or crash-reporting SDK. Firebase services may process standard technical information (such as IP address and device type) as part of delivering their service.</li>
 </ul>
 
 <h2>2. How We Use Your Information</h2>
 <ul>
-  <li>To identify your account and sync your study progress across devices.</li>
-  <li>To provide AI-generated tasting note suggestions (processed by a third-party LLM API; no personally identifiable information is sent).</li>
-  <li>We do not sell, rent, or share your personal information with any third party for advertising purposes.</li>
+  <li>To identify your account and synchronise your study progress and notes across your devices.</li>
+  <li>To unlock the study modules you have purchased.</li>
+  <li>To provide the optional on-device and AI-assisted features described in this policy.</li>
+  <li>We do not sell, rent, or share your personal information with third parties for advertising or marketing purposes.</li>
 </ul>
+
+<h2>3. Third-Party Services</h2>
+<ul>
+  <li><strong>Firebase (Google LLC)</strong> — authentication and real-time database. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a></li>
+  <li><strong>Google Sign-In</strong> — optional sign-in method. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+  <li><strong>Sign in with Apple</strong> — optional sign-in method on iOS. <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
+  <li><strong>Google Play Billing / Apple App Store</strong> — payment processing for in-app purchases. <a href="https://policies.google.com/privacy" target="_blank">Google</a> · <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple</a></li>
+  <li><strong>Google ML Kit (text recognition)</strong> — runs on your device to read text from photos; images are not sent to Google by this feature.</li>
+  <li><strong>Optional AI features (OpenAI, Anthropic, Google Gemini).</strong> Some features (such as tasting-note suggestions, blind-tasting analysis, exam-prep help, and wine-list recognition) are optional and <strong>disabled until you enter your own API key</strong> for one of these providers. When you use them, the content you submit for that request (for example tasting-note text, or a photo of a wine list) is sent directly from your device to the provider you chose, under your own account with that provider and subject to its privacy policy. Your API key is stored on your device in secure storage and is never sent to us. We do not receive the data you send to these providers.
+    <br /><a href="https://openai.com/policies/privacy-policy" target="_blank">OpenAI</a> · <a href="https://www.anthropic.com/legal/privacy" target="_blank">Anthropic</a> · <a href="https://policies.google.com/privacy" target="_blank">Google (Gemini)</a></li>
+</ul>
+
+<h2>4. Data Retention and Deletion</h2>
+<p>Your account data is retained for as long as your account is active. You can delete your account and all associated data at any time, either in the app (<strong>Account → Delete Account</strong>) or by email request without installing the app. Full instructions, including what is deleted and what is kept, are on our dedicated page: <a href="delete-account.html">Delete your FlashWine account</a>. We will delete your data within 30 days of a request made by email.</p>
+<p>Purchase records are held by Google Play or the Apple App Store and are not deleted by deleting your FlashWine account.</p>
+
+<h2>5. Children</h2>
+<p>FlashWine contains educational content about alcoholic beverages and is intended for adults only (18 and over, or the legal drinking age in your country, if higher). It is not directed at children, and we do not knowingly collect personal information from anyone under 18. If you believe a child has provided us with personal information, contact us and we will delete it.</p>
+
+<h2>6. Security</h2>
+<p>All data in transit is encrypted using TLS. Built-in question banks are stored as AES-256-GCM encrypted files on your device, and any API key you enter is kept in your device’s secure storage.</p>
+
+<h2>7. Your Rights</h2>
+<p>Depending on where you live (for example under the GDPR in the European Economic Area), you may have the right to access, correct, export, or delete your personal data, and to object to or restrict its processing. You can exercise these rights by contacting us (section 9). You may also lodge a complaint with your local data protection authority.</p>
+
+<h2>8. Changes to This Policy</h2>
+<p>We may update this policy from time to time. The “last updated” date at the top of this page will reflect any changes. If a change is material, we will notify you in the app.</p>
+
+<h2>9. Contact</h2>
+<p>If you have questions about this policy or wish to exercise your data rights, please open an issue at <a href="https://github.com/Quentin-Sauvage/flashwine-support/issues">github.com/Quentin-Sauvage/flashwine-support/issues</a> or email <a href="mailto:qsauvage@icloud.com">qsauvage@icloud.com</a>.</p>
+
+<footer>FlashWine is not affiliated with or endorsed by WSET (Wine &amp; Spirit Education Trust) or the Institute of Masters of Wine.</footer>
+
+</body>
+</html>
 
 <h2>3. Third-Party Services</h2>
 <ul>
